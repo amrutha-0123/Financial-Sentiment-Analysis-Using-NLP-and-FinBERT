@@ -131,3 +131,39 @@ The test sets were used only for final evaluation. No training or validation-bas
 The standard split achieved the highest final Test Macro-F1 of **0.8489**, while the grouped split provides a stricter evaluation against template-level leakage.
 
 ## Repository Structure
+Financial-Sentiment-Analysis/
+│
+├── Financial_Sentiment_Analysis.ipynb
+├── FinancialPhraseBank-v1.0.zip
+├── README.md
+└── License.txt
+
+
+Generated datasets, model checkpoints, and experiment outputs are created by the notebook during execution.
+
+## Reproducibility
+
+The notebook is designed to run sequentially from a fresh environment.
+
+Stage 3 generates the required split artifacts automatically, including:
+
+- `data/phrasebank_with_groups.csv`
+- `data/split_assignments.csv`
+- `data/standard_split.csv`
+- `data/grouped_split.csv`
+
+The notebook also verifies the expected dataset and split dimensions before model evaluation.
+
+## Technologies
+
+Python · Pandas · NumPy · Scikit-learn · PyTorch · Hugging Face Transformers · BERT · FinBERT · Google Colab
+
+## ⚠️ Important Note
+
+The Financial PhraseBank dataset is a third-party dataset. Its original licensing terms are included with the dataset and should be followed when using or redistributing the data.
+
+## Author
+
+**Amrutha Javvadi**
+
+*Financial Sentiment Analysis — NLP / Machine Learning Research Project*
